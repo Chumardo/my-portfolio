@@ -21,12 +21,16 @@ export default {
 </script>
 
 <style>
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+
 #app {
   background-color: rgba(44, 45, 47, 255);
 }
 * {
   margin: 0;
   padding: 0;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
 }
 
 .main {

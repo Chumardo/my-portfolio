@@ -8,6 +8,7 @@ import ResumePage from "./pages/ResumePage.vue";
 import PortfolioPage from "./pages/PortfolioPage.vue";
 import BlogPage from "./pages/BlogPage.vue";
 import ContactPage from "./pages/ContactPage.vue";
+import NotFound from "./pages/NotFound.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -18,6 +19,7 @@ const router = createRouter({
     { path: "/portfolio", component: PortfolioPage },
     { path: "/blog", component: BlogPage },
     { path: "/contact", component: ContactPage },
+    { path: "/:notFound(.*)", component: NotFound },
   ],
 });
 

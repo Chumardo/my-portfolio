@@ -1,5 +1,17 @@
 <template>
-  <div class="container">
-    <h1>Blog Page</h1>
-  </div>
+  <TheContainer>
+    <TheHeader title="My Blogs" filename="blog.png" />
+  </TheContainer>
 </template>
+
+<script>
+import TheContainer from "../components/TheContainer.vue";
+import TheHeader from "../components/TheHeader.vue";
+
+export default {
+  components: {
+    TheContainer,
+    TheHeader,
+  },
+};
+</script>

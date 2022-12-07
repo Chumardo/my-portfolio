@@ -21,6 +21,9 @@ export default {
 </script>
 
 <style>
+#app {
+  background-color: rgba(44, 45, 47, 255);
+}
 * {
   margin: 0;
   padding: 0;

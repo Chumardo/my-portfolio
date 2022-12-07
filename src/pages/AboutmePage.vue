@@ -106,5 +106,6 @@ h1 {
 .field span {
   color: rgb(225, 225, 225);
   font-weight: 400;
+  font-size: 16px;
 }
 </style>

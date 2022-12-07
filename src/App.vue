@@ -20,8 +20,6 @@ export default {
 * {
   margin: 0;
   padding: 0;
-  background-color: rgb(182, 182, 182);
-  color: rgb(133, 133, 133);
 }
 
 .main {

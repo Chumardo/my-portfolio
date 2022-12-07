@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <TheContainer>
     <TheHeader title="About Me" filename="about.png"> </TheHeader>
     <div class="info">
       <div class="about">
@@ -29,28 +29,22 @@
         </div>
       </div>
     </div>
-  </div>
+  </TheContainer>
 </template>
 
 <script>
 import TheHeader from "../components/TheHeader.vue";
+import TheContainer from "../components/TheContainer.vue";
 export default {
   components: {
     TheHeader,
+    TheContainer,
   },
 };
 </script>
 
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
-
-.container {
-  background-color: rgba(44, 45, 47, 255);
-  width: 100%;
-  padding-left: 17%;
-  padding-right: 17%;
-  padding-top: 2%;
-}
 
 .info {
   display: grid;

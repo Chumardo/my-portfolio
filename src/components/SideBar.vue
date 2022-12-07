@@ -9,12 +9,33 @@
       </div>
       <div class="sidebar-nav">
         <ul>
-          <li>HOME</li>
-          <li>ABOUT ME</li>
-          <li>RESUME</li>
-          <li>PORTFOLIO</li>
-          <li>BLOG</li>
-          <li>CONTACT</li>
+          <li>
+            <img src="@/assets/img/home.png" alt="Home Icon" />
+            <span>HOME</span>
+          </li>
+          <li>
+            <img src="@/assets/img/about.png" alt="About Icon" /><span
+              >ABOUT ME</span
+            >
+          </li>
+          <li>
+            <img src="@/assets/img/resume.png" alt="Resume Icon" /><span
+              >RESUME</span
+            >
+          </li>
+          <li>
+            <img src="@/assets/img/portfolio.png" alt="Portfolio Icon" /><span
+              >PORTFOLIO</span
+            >
+          </li>
+          <li>
+            <img src="@/assets/img/blog.png" alt="Blog Icon" /><span>BLOG</span>
+          </li>
+          <li>
+            <img src="@/assets/img/contact.png" alt="Contact Icon" /><span
+              >CONTACT</span
+            >
+          </li>
         </ul>
       </div>
     </div>
@@ -43,8 +64,24 @@ img {
 }
 
 .sidebar-nav li {
-  color: rgba(87, 80, 89, 255);
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
   padding: 0.5rem;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom-style: solid;
+  border-bottom-width: thin;
+  border-bottom-color: rgba(44, 43, 43, 0.5);
+}
+
+.sidebar-nav li span {
+  margin-left: 10px;
+  color: white;
+}
+
+.sidebar-nav li img {
+  margin-left: 10%;
 }
 
 .sidebar-top {

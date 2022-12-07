@@ -9,29 +9,29 @@
       </div>
       <div class="sidebar-nav">
         <ul>
-          <li>
+          <li @click="redirectHandler('/')">
             <img src="@/assets/img/home.png" alt="Home Icon" />
             <span>HOME</span>
           </li>
-          <li>
+          <li @click="redirectHandler('/about')">
             <img src="@/assets/img/about.png" alt="About Icon" /><span
               >ABOUT ME</span
             >
           </li>
-          <li>
+          <li @click="redirectHandler('/resume')">
             <img src="@/assets/img/resume.png" alt="Resume Icon" /><span
               >RESUME</span
             >
           </li>
-          <li>
+          <li @click="redirectHandler('/portfolio')">
             <img src="@/assets/img/portfolio.png" alt="Portfolio Icon" /><span
               >PORTFOLIO</span
             >
           </li>
-          <li>
+          <li @click="redirectHandler('/blog')">
             <img src="@/assets/img/blog.png" alt="Blog Icon" /><span>BLOG</span>
           </li>
-          <li>
+          <li @click="redirectHandler('/contact')">
             <img src="@/assets/img/contact.png" alt="Contact Icon" /><span
               >CONTACT</span
             >
@@ -41,6 +41,16 @@
     </div>
   </aside>
 </template>
+
+<script>
+export default {
+  methods: {
+    redirectHandler(routeString) {
+      this.$router.push(routeString);
+    },
+  },
+};
+</script>
 
 <style scoped>
 * {

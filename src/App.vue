@@ -39,14 +39,17 @@ export default {
 }
 
 .route-enter-from {
+  opacity: 0.5;
   transform: scale(0.5, 0.5);
 }
 
 .route-enter-active {
+  opacity: 0.5;
   transition: all 0.3s ease-out;
 }
 
 .route-leave-to {
+  opacity: 0.5;
   transform: scale(0.5, 0.5);
 }
 

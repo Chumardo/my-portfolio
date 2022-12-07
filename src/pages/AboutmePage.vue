@@ -107,9 +107,4 @@ h1 {
   color: rgb(225, 225, 225);
   font-weight: 400;
 }
-
-/* .fields,
-.about-info {
-  padding-top: 3rem;
-} */
 </style>

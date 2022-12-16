@@ -4,9 +4,77 @@
     <div class="exp-edu">
       <div class="experience">
         <h3>EXPERIENCE</h3>
+        <div class="content-wrapper">
+          <div class="content">
+            <div class="info">
+              <h4>Sales manager</h4>
+              <h5>WORCO, Tbilisi, Georgia</h5>
+              <p>
+                Sit cupiditate praesentium ex esse nulla Facere fuga
+                perspiciatis eveniet provident neque Ea ratione non minus
+                temporibus ipsum Sunt minima
+              </p>
+            </div>
+          </div>
+
+          <div class="content">
+            <div class="info">
+              <h4>Accounting officer</h4>
+              <h5>Bakery, Rustavi, Georgia</h5>
+              <p>
+                Dolor id atque accusantium ut impedit odit provident soluta
+                voluptatem Veritatis ipsam neque mollitia vero suscipit a
+                laborum doloremque. Ipsa!
+              </p>
+            </div>
+          </div>
+
+          <div class="content">
+            <div class="info">
+              <h4>QA Automation Intern</h4>
+              <h5>a1qa, Remote, USA</h5>
+              <p>
+                Consectetur pariatur fugiat ipsam aperiam maiores. Nisi in
+                dignissimos debitis expedita asperiores delectus vitae corporis.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
+
       <div class="education">
         <h3>EDUCATION</h3>
+        <div class="content-wrapper">
+          <div class="content">
+            <div class="info">
+              <h4>Business Administration, Management</h4>
+              <h5>Ilia State University, Tbilisi, Georgia</h5>
+              <p>
+                Consectetur mollitia amet inventore nisi sed. Provident
+                veritatis exercitationem eum doloremque itaque expedita? Ex
+                voluptatem nostrum numquam illum.
+              </p>
+            </div>
+          </div>
+
+          <div class="content">
+            <div class="info">
+              <h4>
+                International Accounting Standards and Tax System Study course
+                certificate
+              </h4>
+              <h5>
+                Georgian Federation of Professional Accountants and Auditors,
+                Rustavi, Georgia
+              </h5>
+              <p>
+                Elit voluptatibus quas necessitatibus ullam tenetur provident
+                voluptatibus. Ratione delectus lorem minus ipsa architecto.
+                Saepe officiis sint adipisci.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </TheContainer>
@@ -55,5 +123,34 @@ export default {
   padding-left: 5px;
   padding-right: 5px;
   padding-bottom: 3px;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding-top: 15%;
+}
+
+.info {
+  text-align: left;
+  width: 75%;
+}
+
+.info h4 {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  letter-spacing: 1.5px;
+}
+
+.info h5 {
+  color: rgb(23, 122, 212);
+  font-size: 12px;
+  letter-spacing: 1.5px;
+}
+
+.info p {
+  color: rgb(190, 190, 190);
+  font-size: 16px;
 }
 </style>

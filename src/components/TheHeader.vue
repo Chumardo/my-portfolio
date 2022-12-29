@@ -23,6 +23,9 @@ export default {
   font-size: 20px;
   border-bottom-width: thin;
   border-bottom-color: rgba(255, 255, 255, 0.5);
+  position: sticky;
+  top: 0;
+  background-color: rgba(44, 45, 47, 255);
 }
 
 img {

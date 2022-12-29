@@ -191,6 +191,7 @@ export default {
 
 .coding-skills {
   padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 .skills-wrapper {

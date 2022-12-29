@@ -79,6 +79,97 @@
     </div>
     <div class="coding-skills">
       <h3>CODING SKILLS</h3>
+      <div class="skills-wrapper">
+        <div class="skill-bar">
+          <label for="skill">HTML</label>
+          <progress id="skill" value="100" max="100"></progress>
+        </div>
+
+        <div class="skill-bar">
+          <label for="skill">CSS</label>
+          <progress id="skill" value="32" max="100"></progress>
+        </div>
+
+        <div class="skill-bar">
+          <label for="skill">Javascript</label>
+          <progress id="skill" value="32" max="100"></progress>
+        </div>
+
+        <div class="skill-bar">
+          <label for="skill">Vue.js</label>
+          <progress id="skill" value="32" max="100"></progress>
+        </div>
+
+        <div class="skill-bar">
+          <label for="skill">Python</label>
+          <progress id="skill" value="32" max="100"></progress>
+        </div>
+
+        <div class="skill-bar">
+          <label for="skill">Jinja</label>
+          <progress id="skill" value="32" max="100"></progress>
+        </div>
+
+        <div class="skill-bar">
+          <label for="skill">Flask</label>
+          <progress id="skill" value="32" max="100"></progress>
+        </div>
+
+        <div class="skill-bar">
+          <label for="skill">Django</label>
+          <progress id="skill" value="32" max="100"></progress>
+        </div>
+
+        <div class="skill-bar">
+          <label for="skill">Kivy</label>
+          <progress id="skill" value="32" max="100"></progress>
+        </div>
+
+        <div class="skill-bar">
+          <label for="skill">Pandas</label>
+          <progress id="skill" value="32" max="100"></progress>
+        </div>
+
+        <div class="skill-bar">
+          <label for="skill">SQLAlchemy</label>
+          <progress id="skill" value="32" max="100"></progress>
+        </div>
+
+        <div class="skill-bar">
+          <label for="skill">SQLite</label>
+          <progress id="skill" value="32" max="100"></progress>
+        </div>
+
+        <div class="skill-bar">
+          <label for="skill">POSTMAN</label>
+          <progress id="skill" value="32" max="100"></progress>
+        </div>
+
+        <div class="skill-bar">
+          <label for="skill">Selenium</label>
+          <progress id="skill" value="32" max="100"></progress>
+        </div>
+
+        <div class="skill-bar">
+          <label for="skill">OpenCV</label>
+          <progress id="skill" value="32" max="100"></progress>
+        </div>
+
+        <div class="skill-bar">
+          <label for="skill">Scikit Learn</label>
+          <progress id="skill" value="32" max="100"></progress>
+        </div>
+
+        <div class="skill-bar">
+          <label for="skill">TensorFlow</label>
+          <progress id="skill" value="32" max="100"></progress>
+        </div>
+
+        <div class="skill-bar">
+          <label for="skill">PyTorch</label>
+          <progress id="skill" value="32" max="100"></progress>
+        </div>
+      </div>
     </div>
   </TheContainer>
 </template>
@@ -161,5 +252,35 @@ export default {
 
 .coding-skills {
   padding-top: 5%;
+}
+
+.skills-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 5%;
+  text-align: start;
+  width: 100%;
+}
+
+.skill-bar {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+progress {
+  width: 90%;
+  height: 10px;
+  border: none;
+  color: rgb(23, 122, 212);
+  margin-top: 10px;
+}
+
+progress::-webkit-progress-value {
+  background: rgb(23, 122, 212);
+}
+
+progress::-webkit-progress-bar {
+  background: rgb(64, 65, 68);
 }
 </style>

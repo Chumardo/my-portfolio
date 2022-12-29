@@ -60,8 +60,14 @@ aside {
   display: flex;
   flex-direction: column;
   width: 200px;
-  height: 100vh;
+  min-height: 100vh;
   text-align: center;
+  overflow: visible;
+}
+
+.sidebar {
+  position: sticky;
+  top: 0;
 }
 
 img {

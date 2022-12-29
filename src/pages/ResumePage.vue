@@ -80,94 +80,9 @@
     <div class="coding-skills">
       <h3>CODING SKILLS</h3>
       <div class="skills-wrapper">
-        <div class="skill-bar">
-          <label for="skill">HTML</label>
-          <progress id="skill" value="100" max="100"></progress>
-        </div>
-
-        <div class="skill-bar">
-          <label for="skill">CSS</label>
-          <progress id="skill" value="32" max="100"></progress>
-        </div>
-
-        <div class="skill-bar">
-          <label for="skill">Javascript</label>
-          <progress id="skill" value="32" max="100"></progress>
-        </div>
-
-        <div class="skill-bar">
-          <label for="skill">Vue.js</label>
-          <progress id="skill" value="32" max="100"></progress>
-        </div>
-
-        <div class="skill-bar">
-          <label for="skill">Python</label>
-          <progress id="skill" value="32" max="100"></progress>
-        </div>
-
-        <div class="skill-bar">
-          <label for="skill">Jinja</label>
-          <progress id="skill" value="32" max="100"></progress>
-        </div>
-
-        <div class="skill-bar">
-          <label for="skill">Flask</label>
-          <progress id="skill" value="32" max="100"></progress>
-        </div>
-
-        <div class="skill-bar">
-          <label for="skill">Django</label>
-          <progress id="skill" value="32" max="100"></progress>
-        </div>
-
-        <div class="skill-bar">
-          <label for="skill">Kivy</label>
-          <progress id="skill" value="32" max="100"></progress>
-        </div>
-
-        <div class="skill-bar">
-          <label for="skill">Pandas</label>
-          <progress id="skill" value="32" max="100"></progress>
-        </div>
-
-        <div class="skill-bar">
-          <label for="skill">SQLAlchemy</label>
-          <progress id="skill" value="32" max="100"></progress>
-        </div>
-
-        <div class="skill-bar">
-          <label for="skill">SQLite</label>
-          <progress id="skill" value="32" max="100"></progress>
-        </div>
-
-        <div class="skill-bar">
-          <label for="skill">POSTMAN</label>
-          <progress id="skill" value="32" max="100"></progress>
-        </div>
-
-        <div class="skill-bar">
-          <label for="skill">Selenium</label>
-          <progress id="skill" value="32" max="100"></progress>
-        </div>
-
-        <div class="skill-bar">
-          <label for="skill">OpenCV</label>
-          <progress id="skill" value="32" max="100"></progress>
-        </div>
-
-        <div class="skill-bar">
-          <label for="skill">Scikit Learn</label>
-          <progress id="skill" value="32" max="100"></progress>
-        </div>
-
-        <div class="skill-bar">
-          <label for="skill">TensorFlow</label>
-          <progress id="skill" value="32" max="100"></progress>
-        </div>
-
-        <div class="skill-bar">
-          <label for="skill">PyTorch</label>
-          <progress id="skill" value="32" max="100"></progress>
+        <div class="skill-bar" v-for="item in skills" :key="item.skill">
+          <label for="skill">{{ item.skill }} </label>
+          <progress id="skill" :value="item.percent" max="100"></progress>
         </div>
       </div>
     </div>
@@ -182,6 +97,30 @@ export default {
   components: {
     TheContainer,
     TheHeader,
+  },
+  data() {
+    return {
+      skills: [
+        { skill: "HTML", percent: 90 },
+        { skill: "CSS", percent: 30 },
+        { skill: "Javascript", percent: 30 },
+        { skill: "Vue.js", percent: 30 },
+        { skill: "Python", percent: 30 },
+        { skill: "Jinja", percent: 30 },
+        { skill: "Flask", percent: 30 },
+        { skill: "Django", percent: 30 },
+        { skill: "Kivy", percent: 30 },
+        { skill: "Pandas", percent: 30 },
+        { skill: "SQLAlchemy", percent: 30 },
+        { skill: "SQLite", percent: 30 },
+        { skill: "POSTMAN", percent: 30 },
+        { skill: "Selenium", percent: 30 },
+        { skill: "OpenCV", percent: 30 },
+        { skill: "Scikit Learn", percent: 30 },
+        { skill: "TensorFlow", percent: 30 },
+        { skill: "PyTorch", percent: 30 },
+      ],
+    };
   },
 };
 </script>

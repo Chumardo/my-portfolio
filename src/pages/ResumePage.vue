@@ -77,6 +77,9 @@
         </div>
       </div>
     </div>
+    <div class="coding-skills">
+      <h3>CODING SKILLS</h3>
+    </div>
   </TheContainer>
 </template>
 
@@ -100,11 +103,13 @@ export default {
 }
 
 .experience,
-.education {
+.education,
+.coding-skills {
   text-align: center;
 }
 
-.exp-edu h3 {
+.exp-edu h3,
+.coding-skills h3 {
   display: inline-block;
   color: #e1e1e1;
   font-family: "Roboto", sans-serif;
@@ -152,5 +157,9 @@ export default {
 .info p {
   color: rgb(190, 190, 190);
   font-size: 16px;
+}
+
+.coding-skills {
+  padding-top: 5%;
 }
 </style>

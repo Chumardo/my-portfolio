@@ -207,6 +207,13 @@ export default {
   padding: 10px;
 }
 
+.skill-bar label {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+}
+
 progress {
   width: 90%;
   height: 10px;

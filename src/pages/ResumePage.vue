@@ -5,7 +5,7 @@
       <div class="experience">
         <h3>EXPERIENCE</h3>
         <div class="content-wrapper">
-          <div class="info" v-for="info in experiences" :key="info.title">
+          <div class="info" v-for="(info, index) in experiences" :key="index">
             <h4>{{ info.title }}</h4>
             <h5>{{ info.location }}</h5>
             <p>{{ info.description }}</p>
@@ -27,7 +27,7 @@
     <div class="coding-skills">
       <h3>CODING SKILLS</h3>
       <div class="skills-wrapper">
-        <div class="skill-bar" v-for="item in skills" :key="item.skill">
+        <div class="skill-bar" v-for="(item, index) in skills" :key="index">
           <label for="skill">{{ item.skill }} </label>
           <progress id="skill" :value="item.percent" max="100"></progress>
         </div>

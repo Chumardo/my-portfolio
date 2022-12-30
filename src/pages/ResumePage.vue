@@ -5,39 +5,10 @@
       <div class="experience">
         <h3>EXPERIENCE</h3>
         <div class="content-wrapper">
-          <div class="content">
-            <div class="info">
-              <h4>Sales manager</h4>
-              <h5>WORCO, Tbilisi, Georgia</h5>
-              <p>
-                Sit cupiditate praesentium ex esse nulla Facere fuga
-                perspiciatis eveniet provident neque Ea ratione non minus
-                temporibus ipsum Sunt minima
-              </p>
-            </div>
-          </div>
-
-          <div class="content">
-            <div class="info">
-              <h4>Accounting officer</h4>
-              <h5>Bakery, Rustavi, Georgia</h5>
-              <p>
-                Dolor id atque accusantium ut impedit odit provident soluta
-                voluptatem Veritatis ipsam neque mollitia vero suscipit a
-                laborum doloremque. Ipsa!
-              </p>
-            </div>
-          </div>
-
-          <div class="content">
-            <div class="info">
-              <h4>QA Automation Intern</h4>
-              <h5>a1qa, Remote, USA</h5>
-              <p>
-                Consectetur pariatur fugiat ipsam aperiam maiores. Nisi in
-                dignissimos debitis expedita asperiores delectus vitae corporis.
-              </p>
-            </div>
+          <div class="info" v-for="info in experiences" :key="info.title">
+            <h4>{{ info.title }}</h4>
+            <h5>{{ info.location }}</h5>
+            <p>{{ info.description }}</p>
           </div>
         </div>
       </div>
@@ -120,6 +91,26 @@ export default {
         { skill: "TensorFlow", percent: 30 },
         { skill: "PyTorch", percent: 30 },
       ],
+      experiences: [
+        {
+          title: "Sales manager",
+          location: "WORCO, Tbilisi, Georgia",
+          description:
+            "Sit cupiditate praesentium ex esse nulla Facere fuga perspiciatis eveniet provident neque Ea ratione non minus temporibus ipsum Sunt minima",
+        },
+        {
+          title: "Accounting officer",
+          location: "Bakery, Rustavi, Georgia",
+          description:
+            "Dolor id atque accusantium ut impedit odit provident soluta voluptatem Veritatis ipsam neque mollitia vero suscipit a laborum doloremque. Ipsa!",
+        },
+        {
+          title: "QA Automation Intern",
+          location: "a1qa, Remote, USA",
+          description:
+            "Consectetur pariatur fugiat ipsam aperiam maiores. Nisi in dignissimos debitis expedita asperiores delectus vitae corporis.",
+        },
+      ],
     };
   },
 };
@@ -163,13 +154,13 @@ export default {
 .content-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 50px;
   padding-top: 15%;
 }
 
 .info {
   text-align: left;
   width: 75%;
+  padding-bottom: 15%;
 }
 
 .info h4 {

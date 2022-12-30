@@ -16,34 +16,10 @@
       <div class="education">
         <h3>EDUCATION</h3>
         <div class="content-wrapper">
-          <div class="content">
-            <div class="info">
-              <h4>Business Administration, Management</h4>
-              <h5>Ilia State University, Tbilisi, Georgia</h5>
-              <p>
-                Consectetur mollitia amet inventore nisi sed. Provident
-                veritatis exercitationem eum doloremque itaque expedita? Ex
-                voluptatem nostrum numquam illum.
-              </p>
-            </div>
-          </div>
-
-          <div class="content">
-            <div class="info">
-              <h4>
-                International Accounting Standards and Tax System Study course
-                certificate
-              </h4>
-              <h5>
-                Georgian Federation of Professional Accountants and Auditors,
-                Rustavi, Georgia
-              </h5>
-              <p>
-                Elit voluptatibus quas necessitatibus ullam tenetur provident
-                voluptatibus. Ratione delectus lorem minus ipsa architecto.
-                Saepe officiis sint adipisci.
-              </p>
-            </div>
+          <div class="info" v-for="(info, index) in education" :key="index">
+            <h4>{{ info.course }}</h4>
+            <h5>{{ info.university }}</h5>
+            <p>{{ info.description }}</p>
           </div>
         </div>
       </div>
@@ -109,6 +85,22 @@ export default {
           location: "a1qa, Remote, USA",
           description:
             "Consectetur pariatur fugiat ipsam aperiam maiores. Nisi in dignissimos debitis expedita asperiores delectus vitae corporis.",
+        },
+      ],
+      education: [
+        {
+          course: "Business Administration, Management",
+          university: "Ilia State University, Tbilisi, Georgia",
+          description:
+            "Consectetur mollitia amet inventore nisi sed. Provident veritatis exercitationem eum doloremque itaque expedita? Ex voluptatem nostrum numquam illum.",
+        },
+        {
+          course:
+            "International Accounting Standards and Tax System Study course certificate",
+          university:
+            "Georgian Federation of Professional Accountants and Auditors, Rustavi, Georgia",
+          description:
+            "Elit voluptatibus quas necessitatibus ullam tenetur provident voluptatibus. Ratione delectus lorem minus ipsa architecto. Saepe officiis sint adipisci.",
         },
       ],
     };

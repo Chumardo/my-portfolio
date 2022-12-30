@@ -23,11 +23,6 @@
               >RESUME</span
             >
           </li>
-          <li @click="redirectHandler('/portfolio')">
-            <img src="@/assets/img/portfolio.png" alt="Portfolio Icon" /><span
-              >PORTFOLIO</span
-            >
-          </li>
           <li @click="redirectHandler('/blog')">
             <img src="@/assets/img/blog.png" alt="Blog Icon" /><span>BLOG</span>
           </li>

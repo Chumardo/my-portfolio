@@ -4,6 +4,15 @@
     <div class="contact">
       <div class="talk">
         <h3>LET'S TALK</h3>
+        <div class="form">
+          <div class="name-mail">
+            <input type="text" placeholder="Name" />
+            <input type="email" id="email" placeholder="Email" />
+          </div>
+          <div class="message">
+            <textarea id="message" cols="70" rows="5"></textarea>
+          </div>
+        </div>
       </div>
     </div>
   </TheContainer>

@@ -13,6 +13,10 @@
           <div class="second-row">
             <textarea id="message" cols="50" rows="5"></textarea>
           </div>
+
+          <div class="third-row">
+            <button>SEND MESSAGE</button>
+          </div>
         </div>
       </div>
     </div>
@@ -76,6 +80,12 @@ export default {
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 3;
+}
+
+.third-row {
+  grid-column-start: 2;
+  grid-row-start: 4;
+  padding-top: 5%;
 }
 
 textarea {

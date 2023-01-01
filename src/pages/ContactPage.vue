@@ -97,7 +97,7 @@ button {
   border: 2px solid #ffffff;
   padding: 10px 20px;
   text-transform: uppercase;
-  background-color: transparent;
+  background: none;
   font-size: 14px;
   font-weight: 500;
   position: relative;
@@ -105,7 +105,30 @@ button {
   letter-spacing: 1px;
   border-color: #00a3e1 !important;
   color: #00a3e1;
-  overflow: hidden;
   position: relative;
+  transition: color 0.4s linear;
+}
+
+button:hover {
+  background-color: #00a3e1;
+  color: rgb(0, 0, 0);
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  background: #00a3e1;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: transform 0.5s;
+}
+
+button::before {
+  transform: scaleX(0);
+}
+
+button:hover::before {
+  transform: scaleX(1);
 }
 </style>

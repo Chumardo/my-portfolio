@@ -91,4 +91,21 @@ export default {
 textarea {
   resize: vertical;
 }
+
+button {
+  cursor: pointer;
+  border: 2px solid #ffffff;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  background-color: transparent;
+  font-size: 14px;
+  font-weight: 500;
+  position: relative;
+  line-height: 100%;
+  letter-spacing: 1px;
+  border-color: #00a3e1 !important;
+  color: #00a3e1;
+  overflow: hidden;
+  position: relative;
+}
 </style>

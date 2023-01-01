@@ -5,12 +5,13 @@
       <div class="talk">
         <h3>LET'S TALK</h3>
         <div class="form">
-          <div class="name-mail">
-            <input type="text" placeholder="Name" />
+          <div class="first-row">
+            <input type="text" placeholder="Name" id="name" />
             <input type="email" id="email" placeholder="Email" />
           </div>
-          <div class="message">
-            <textarea id="message" cols="70" rows="5"></textarea>
+
+          <div class="second-row">
+            <textarea id="message" cols="50" rows="5"></textarea>
           </div>
         </div>
       </div>
@@ -55,5 +56,29 @@ export default {
 .contact {
   text-align: center;
   padding-top: 5%;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.first-row {
+  display: flex;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  justify-content: space-between;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+.second-row {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+}
+
+textarea {
+  resize: vertical;
 }
 </style>

@@ -19,6 +19,15 @@
           </div>
         </div>
       </div>
+      <div class="contact-info">
+        <div class="mail">
+          <h3>dachi.giorgadze98@gmail.com</h3>
+        </div>
+        <div class="location">
+          <h3>Rustavi, Modebadze Street 22, Georgia</h3>
+        </div>
+        <div class="phone">+995 593 476 776</div>
+      </div>
     </div>
   </TheContainer>
 </template>
@@ -86,6 +95,14 @@ export default {
   grid-column-start: 2;
   grid-row-start: 4;
   padding-top: 5%;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 15%;
+  color: #00a3e1;
 }
 
 textarea {

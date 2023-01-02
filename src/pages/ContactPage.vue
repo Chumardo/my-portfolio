@@ -15,7 +15,7 @@
           </div>
 
           <div class="third-row">
-            <button>SEND MESSAGE</button>
+            <div class="btn"><button>SEND MESSAGE</button></div>
           </div>
         </div>
       </div>
@@ -92,7 +92,12 @@ textarea {
   resize: vertical;
 }
 
+.btn {
+  transform: translate(30%, 25%);
+}
+
 button {
+  display: block;
   cursor: pointer;
   border: 2px solid #ffffff;
   padding: 10px 20px;
@@ -106,29 +111,25 @@ button {
   border-color: #00a3e1 !important;
   color: #00a3e1;
   position: relative;
-  transition: color 0.4s linear;
-}
-
-button:hover {
-  background-color: #00a3e1;
-  color: rgb(0, 0, 0);
+  transition: 1s all ease;
+  overflow: hidden;
+  color: black;
 }
 
 button::before {
   content: "";
   position: absolute;
   background: #00a3e1;
-  top: 0;
-  left: 0;
+  width: 0;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: -1;
-  transition: transform 0.5s;
-}
-
-button::before {
-  transform: scaleX(0);
+  transition: all 0.6s ease;
 }
 
 button:hover::before {
-  transform: scaleX(1);
+  width: 100%;
 }
 </style>

@@ -109,11 +109,10 @@ button {
   line-height: 100%;
   letter-spacing: 1px;
   border-color: #00a3e1 !important;
-  color: #00a3e1;
   position: relative;
   transition: 1s all ease;
   overflow: hidden;
-  color: black;
+  color: white;
 }
 
 button::before {
@@ -131,5 +130,9 @@ button::before {
 
 button:hover::before {
   width: 100%;
+}
+
+button:hover {
+  color: black;
 }
 </style>

@@ -21,12 +21,17 @@
       </div>
       <div class="contact-info">
         <div class="mail">
+          <img src="@/assets/img/email.png" alt="email-icon" />
           <h3>dachi.giorgadze98@gmail.com</h3>
         </div>
         <div class="location">
+          <img src="@/assets/img/location.png" alt="location-icon" />
           <h3>Rustavi, Modebadze Street 22, Georgia</h3>
         </div>
-        <div class="phone">+995 593 476 776</div>
+        <div class="phone">
+          <img src="@/assets/img/phone.png" alt="phone-icon" />
+          <h3>+995 593 476 776</h3>
+        </div>
       </div>
     </div>
   </TheContainer>

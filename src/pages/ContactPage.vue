@@ -108,6 +108,7 @@ export default {
   justify-content: space-between;
   padding-top: 15%;
   color: #00a3e1;
+  margin-bottom: 10%;
 }
 
 textarea {

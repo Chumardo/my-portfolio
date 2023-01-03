@@ -158,4 +158,10 @@ button:hover::before {
 button:hover {
   color: black;
 }
+
+input {
+  padding: 5px;
+  border: 5px solid #00a3e1;
+  border-radius: 4px;
+}
 </style>

@@ -9,27 +9,36 @@
       </div>
       <div class="sidebar-nav">
         <ul>
-          <li @click="redirectHandler('/')">
+          <li>
             <img src="@/assets/img/home.png" alt="Home Icon" />
-            <span>HOME</span>
+            <router-link class="link" to="/">Home</router-link>
           </li>
-          <li @click="redirectHandler('/about')">
-            <img src="@/assets/img/about.png" alt="About Icon" /><span
-              >ABOUT ME</span
+          <li>
+            <img src="@/assets/img/about.png" alt="About Icon" /><router-link
+              class="link"
+              to="/about"
+              >ABOUT ME</router-link
             >
           </li>
-          <li @click="redirectHandler('/resume')">
-            <img src="@/assets/img/resume.png" alt="Resume Icon" /><span
-              >RESUME</span
+          <li>
+            <img src="@/assets/img/resume.png" alt="Resume Icon" /><router-link
+              class="link"
+              to="/resume"
+              >RESUME</router-link
             >
           </li>
-          <li @click="redirectHandler('/blog')">
-            <img src="@/assets/img/blog.png" alt="Blog Icon" /><span>BLOG</span>
-          </li>
-          <li @click="redirectHandler('/contact')">
-            <img src="@/assets/img/contact.png" alt="Contact Icon" /><span
-              >CONTACT</span
+          <li>
+            <img src="@/assets/img/blog.png" alt="Blog Icon" /><router-link
+              class="link"
+              to="/blog"
+              >BLOG</router-link
             >
+          </li>
+          <li>
+            <img
+              src="@/assets/img/contact.png"
+              alt="Contact Icon"
+            /><router-link class="link" to="/contact">CONTACT</router-link>
           </li>
         </ul>
       </div>
@@ -75,7 +84,6 @@ img {
 }
 
 .sidebar-nav li {
-  cursor: pointer;
   display: flex;
   flex-direction: row;
   padding: 0.5rem;
@@ -86,7 +94,7 @@ img {
   border-bottom-color: rgba(44, 43, 43, 0.5);
 }
 
-.sidebar-nav li span {
+.sidebar-nav li .link {
   margin-left: 10px;
   color: white;
 }
@@ -117,7 +125,18 @@ img {
   color: white;
 }
 
-li:hover span {
+.link {
+  text-decoration: none;
+}
+
+li:hover .link {
   color: rgb(23, 122, 212);
+}
+
+.link:hover,
+.link.router-link-active,
+.link.router-link-exact-active {
+  color: rgb(23, 122, 212) !important;
+  cursor: pointer;
 }
 </style>

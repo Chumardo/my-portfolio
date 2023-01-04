@@ -116,4 +116,8 @@ img {
   width: 100%;
   color: white;
 }
+
+li:hover span {
+  color: rgb(23, 122, 212);
+}
 </style>

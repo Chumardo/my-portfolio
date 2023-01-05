@@ -4,20 +4,37 @@
     <div class="contact">
       <div class="talk">
         <h3>LET'S TALK</h3>
-        <div class="form">
-          <div class="first-row">
-            <input type="text" placeholder="Name" id="name" />
-            <input type="email" id="email" placeholder="Email" />
-          </div>
+        <form @submit.prevent="sendMessage">
+          <div class="form">
+            <div class="first-row">
+              <input
+                type="text"
+                placeholder="Name"
+                id="name"
+                v-model="contact_name"
+              />
+              <input
+                type="email"
+                id="email"
+                placeholder="Email"
+                v-model="contact_email"
+              />
+            </div>
 
-          <div class="second-row">
-            <textarea id="message" cols="50" rows="5"></textarea>
-          </div>
+            <div class="second-row">
+              <textarea
+                id="message"
+                cols="50"
+                rows="5"
+                v-model="contact_message"
+              ></textarea>
+            </div>
 
-          <div class="third-row">
-            <div class="btn"><button>SEND MESSAGE</button></div>
+            <div class="third-row">
+              <div class="btn"><button>SEND MESSAGE</button></div>
+            </div>
           </div>
-        </div>
+        </form>
       </div>
       <div class="contact-info">
         <div class="mail">
@@ -42,9 +59,23 @@ import TheContainer from "../components/TheContainer.vue";
 import TheHeader from "../components/TheHeader.vue";
 
 export default {
+  data() {
+    return {
+      contact_name: "",
+      contact_email: "",
+      contact_message: "",
+    };
+  },
   components: {
     TheContainer,
     TheHeader,
+  },
+  methods: {
+    sendMessage() {
+      console.log(this.contact_name);
+      console.log(this.contact_email);
+      console.log(this.contact_message);
+    },
   },
 };
 </script>

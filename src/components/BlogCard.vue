@@ -3,7 +3,7 @@
     <router-link to="/">
       <div class="cover">
         <img
-          src="https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg"
+          :src="blog.cover"
           style="width: 30vh; height: 25vh"
           alt="Blog Image"
         />
@@ -11,13 +11,19 @@
 
       <div class="blog-content">
         <div class="text">
-          <h2>Blog Title</h2>
-          <p>2 April 1998</p>
+          <h2>{{ blog.title }}</h2>
+          <p>{{ blog.date }}</p>
         </div>
       </div>
     </router-link>
   </div>
 </template>
+
+<script>
+export default {
+  props: ["blog"],
+};
+</script>
 
 <style scoped>
 .card {

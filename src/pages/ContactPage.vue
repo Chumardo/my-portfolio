@@ -72,9 +72,20 @@ export default {
   },
   methods: {
     sendMessage() {
-      console.log(this.contact_name);
-      console.log(this.contact_email);
-      console.log(this.contact_message);
+      this.validateForm();
+    },
+    validateForm() {
+      if (
+        this.contact_name.length === 0 ||
+        this.contact_email.length === 0 ||
+        this.contact_message.length === 0
+      ) {
+        console.log("Error");
+      } else {
+        console.log(this.contact_name);
+        console.log(this.contact_email);
+        console.log(this.contact_message);
+      }
     },
   },
 };

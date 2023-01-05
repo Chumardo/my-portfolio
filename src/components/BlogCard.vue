@@ -10,9 +10,48 @@
       </div>
 
       <div class="blog-content">
-        <h4>Blog Title</h4>
-        <p>2 April 1998</p>
+        <div class="text">
+          <h2>Blog Title</h2>
+          <p>2 April 1998</p>
+        </div>
       </div>
     </router-link>
   </div>
 </template>
+
+<style scoped>
+.card {
+  position: relative;
+  text-align: center;
+  color: white;
+  border: 1px solid #222324;
+  padding-bottom: 15%;
+}
+
+.blog-content {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgba(44, 45, 47, 255);
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-top: none;
+}
+
+.text {
+  width: 80%;
+  height: 100%;
+  background-color: rgba(44, 45, 47, 255);
+  position: absolute;
+  top: -50%;
+  display: flex;
+  padding-top: 5%;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+}
+</style>

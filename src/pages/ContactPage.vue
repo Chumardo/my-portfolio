@@ -80,6 +80,23 @@ export default {
     TheContainer,
     TheHeader,
   },
+  watch: {
+    contact_name(value) {
+      if (value.length > 0) {
+        this.nameError = false;
+      }
+    },
+    contact_email(value) {
+      if (value.length > 0) {
+        this.mailError = false;
+      }
+    },
+    contact_message(value) {
+      if (value.length > 0) {
+        this.messageError = false;
+      }
+    },
+  },
   methods: {
     sendMessage() {
       this.validateForm();

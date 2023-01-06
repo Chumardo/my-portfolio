@@ -10,35 +10,42 @@
       <div class="sidebar-nav">
         <ul>
           <li>
-            <img src="@/assets/img/home.png" alt="Home Icon" />
-            <router-link class="link" to="/">Home</router-link>
-          </li>
-          <li>
-            <img src="@/assets/img/about.png" alt="About Icon" /><router-link
-              class="link"
-              to="/about"
-              >ABOUT ME</router-link
+            <router-link class="link" to="/"
+              ><img
+                src="@/assets/img/home.png"
+                alt="Home Icon"
+              />Home</router-link
             >
           </li>
           <li>
-            <img src="@/assets/img/resume.png" alt="Resume Icon" /><router-link
-              class="link"
-              to="/resume"
-              >RESUME</router-link
+            <router-link class="link" to="/about"
+              ><img src="@/assets/img/about.png" alt="About Icon" />ABOUT
+              ME</router-link
             >
           </li>
           <li>
-            <img src="@/assets/img/blog.png" alt="Blog Icon" /><router-link
-              class="link"
-              to="/blog"
-              >BLOG</router-link
+            <router-link class="link" to="/resume"
+              ><img
+                src="@/assets/img/resume.png"
+                alt="Resume Icon"
+              />RESUME</router-link
             >
           </li>
           <li>
-            <img
-              src="@/assets/img/contact.png"
-              alt="Contact Icon"
-            /><router-link class="link" to="/contact">CONTACT</router-link>
+            <router-link class="link" to="/blog"
+              ><img
+                src="@/assets/img/blog.png"
+                alt="Blog Icon"
+              />BLOG</router-link
+            >
+          </li>
+          <li>
+            <router-link class="link" to="/contact"
+              ><img
+                src="@/assets/img/contact.png"
+                alt="Contact Icon"
+              />CONTACT</router-link
+            >
           </li>
         </ul>
       </div>
@@ -94,15 +101,6 @@ img {
   border-bottom-color: rgba(44, 43, 43, 0.5);
 }
 
-.sidebar-nav li .link {
-  margin-left: 10px;
-  color: white;
-}
-
-.sidebar-nav li img {
-  margin-left: 10%;
-}
-
 .sidebar-top {
   position: relative;
 }
@@ -126,11 +124,17 @@ img {
 }
 
 .link {
+  display: flex;
+  flex-direction: row;
   text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  padding-left: 15%;
+  color: white;
 }
 
-li:hover .link {
-  color: rgb(23, 122, 212);
+.link img {
+  padding-right: 15px;
 }
 
 .link:hover,

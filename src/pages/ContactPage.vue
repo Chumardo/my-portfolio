@@ -63,6 +63,7 @@
 <script>
 import TheContainer from "../components/TheContainer.vue";
 import TheHeader from "../components/TheHeader.vue";
+import emailjs from "emailjs-com";
 
 export default {
   data() {
@@ -123,7 +124,17 @@ export default {
         this.messageError = true;
         this.isActive = false;
       } else {
-        console.log("All fields are filled in");
+        const templateparams = {
+          name: this.contact_name,
+          message: this.contact_message,
+          reply_to: this.contact_email,
+        };
+        emailjs.send(
+          "service_svc9j0h",
+          "template_te4layr",
+          templateparams,
+          "nzZ4NnUEr-5Zs6yXa"
+        );
         this.isActive = true;
         this.nameError = false;
         this.mailError = false;

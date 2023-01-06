@@ -84,16 +84,25 @@ export default {
     contact_name(value) {
       if (value.length > 0) {
         this.nameError = false;
+        if (this.contact_email.length > 0 && this.contact_message.length > 0) {
+          this.isActive = true;
+        }
       }
     },
     contact_email(value) {
       if (value.length > 0) {
         this.mailError = false;
+        if (this.contact_name.length > 0 && this.contact_message.length > 0) {
+          this.isActive = true;
+        }
       }
     },
     contact_message(value) {
       if (value.length > 0) {
         this.messageError = false;
+        if (this.contact_email.length > 0 && this.contact_name.length > 0) {
+          this.isActive = true;
+        }
       }
     },
   },

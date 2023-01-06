@@ -8,12 +8,14 @@
           <div class="form">
             <div class="first-row">
               <input
+                :class="{ active: isActive, 'text-danger': nameError }"
                 type="text"
                 placeholder="Name"
                 id="name"
                 v-model="contact_name"
               />
               <input
+                :class="{ active: isActive, 'text-danger': mailError }"
                 type="email"
                 id="email"
                 placeholder="Email"
@@ -23,11 +25,15 @@
 
             <div class="second-row">
               <textarea
+                :class="{ active: isActive, 'text-danger': messageError }"
                 id="message"
                 cols="50"
                 rows="5"
                 v-model="contact_message"
               ></textarea>
+              <p v-show="isActive === false" class="error-message">
+                Please fill fields
+              </p>
             </div>
 
             <div class="third-row">
@@ -64,6 +70,10 @@ export default {
       contact_name: "",
       contact_email: "",
       contact_message: "",
+      isActive: true,
+      nameError: false,
+      mailError: false,
+      messageError: false,
     };
   },
   components: {
@@ -75,16 +85,23 @@ export default {
       this.validateForm();
     },
     validateForm() {
-      if (
-        this.contact_name.length === 0 ||
-        this.contact_email.length === 0 ||
-        this.contact_message.length === 0
-      ) {
-        console.log("Error");
+      if (this.contact_name.length === 0) {
+        this.nameError = true;
+        this.isActive = false;
+      }
+      if (this.contact_email.length === 0) {
+        this.mailError = true;
+        this.isActive = false;
+      }
+      if (this.contact_message.length === 0) {
+        this.messageError = true;
+        this.isActive = false;
       } else {
-        console.log(this.contact_name);
-        console.log(this.contact_email);
-        console.log(this.contact_message);
+        console.log("All fields are filled in");
+        this.isActive = true;
+        this.nameError = false;
+        this.mailError = false;
+        this.messageError = false;
       }
     },
   },
@@ -203,7 +220,16 @@ button:hover {
 
 input {
   padding: 5px;
-  border: 5px solid #00a3e1;
+  border: 3px solid #00a3e1;
   border-radius: 4px;
+}
+
+.text-danger {
+  border: 2px solid #ff0000;
+  border-radius: 2px;
+}
+
+.error-message {
+  color: red;
 }
 </style>

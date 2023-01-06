@@ -34,6 +34,9 @@
               <p v-show="isActive === false" class="error-message">
                 Please fill fields
               </p>
+              <p v-show="messageSent === true" class="message-sent">
+                Message has been sent successfuly.
+              </p>
             </div>
 
             <div class="third-row">
@@ -75,6 +78,7 @@ export default {
       nameError: false,
       mailError: false,
       messageError: false,
+      messageSent: false,
     };
   },
   components: {
@@ -139,6 +143,10 @@ export default {
         this.nameError = false;
         this.mailError = false;
         this.messageError = false;
+        this.messageSent = true;
+        this.contact_name = "";
+        this.contact_email = "";
+        this.contact_message = "";
       }
     },
   },
@@ -268,5 +276,10 @@ input {
 
 .error-message {
   color: red;
+}
+
+.message-sent {
+  padding-top: 5%;
+  color: #00a3e1;
 }
 </style>

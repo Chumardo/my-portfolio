@@ -4,7 +4,7 @@
       <div class="cover">
         <img
           :src="blog.cover"
-          style="width: 30vh; height: 25vh"
+          style="width: 100%; height: 20vh"
           alt="Blog Image"
         />
       </div>
@@ -32,6 +32,7 @@ export default {
   color: white;
   border: 1px solid #222324;
   padding-bottom: 15%;
+  margin: 5%;
 }
 
 .blog-content {

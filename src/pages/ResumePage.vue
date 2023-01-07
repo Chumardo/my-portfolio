@@ -1,6 +1,6 @@
 <template>
   <TheContainer>
-    <TheHeader title="My Resume" filename="resume.png">
+    <TheHeader title="My Resume">
       <ResumeIcon :color="`#177ad4`"> </ResumeIcon>
     </TheHeader>
     <div class="exp-edu">

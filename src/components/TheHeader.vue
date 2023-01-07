@@ -22,12 +22,13 @@ export default {
   border-bottom-width: thin;
   border-bottom-color: rgba(255, 255, 255, 0.5);
   position: sticky;
-  top: 0;
+  top: -1%;
   background-color: rgba(44, 45, 47, 255);
 }
 
 h1 {
   color: #177ad4;
+  padding-top: 1%;
   padding-bottom: 1%;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <TheContainer>
-    <TheHeader title="My Blogs">
+    <TheHeader class="header" title="My Blogs">
       <BlogIcon :color="`#177ad4`"></BlogIcon>
     </TheHeader>
     <div class="blogs">
@@ -132,5 +132,9 @@ export default {
   grid-template-columns: 1fr 1fr 1fr;
   padding-top: 5%;
   padding-bottom: 5%;
+}
+
+.header {
+  z-index: 1;
 }
 </style>

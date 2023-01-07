@@ -1,6 +1,8 @@
 <template>
   <TheContainer>
-    <TheHeader title="Contact Me" filename="contact.png" />
+    <TheHeader title="Contact Me" filename="contact.png">
+      <ContactIcon :color="`#177ad4`"> </ContactIcon>
+    </TheHeader>
     <div class="contact">
       <div class="talk">
         <h3>LET'S TALK</h3>
@@ -66,6 +68,7 @@
 <script>
 import TheContainer from "../components/TheContainer.vue";
 import TheHeader from "../components/TheHeader.vue";
+import ContactIcon from "../components/Icons/ContactIcon.vue";
 import emailjs from "emailjs-com";
 
 export default {
@@ -84,6 +87,7 @@ export default {
   components: {
     TheContainer,
     TheHeader,
+    ContactIcon,
   },
   watch: {
     contact_name(value) {

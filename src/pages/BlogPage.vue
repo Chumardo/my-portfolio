@@ -1,6 +1,8 @@
 <template>
   <TheContainer>
-    <TheHeader title="My Blogs" filename="blog.png" />
+    <TheHeader title="My Blogs">
+      <BlogIcon :color="`#177ad4`"></BlogIcon>
+    </TheHeader>
     <div class="blogs">
       <BlogCard :blog="blog" v-for="(blog, index) in blogPosts" :key="index" />
     </div>
@@ -11,12 +13,14 @@
 import TheContainer from "../components/TheContainer.vue";
 import TheHeader from "../components/TheHeader.vue";
 import BlogCard from "../components/BlogCard.vue";
+import BlogIcon from "../components/Icons/BlogIcon.vue";
 
 export default {
   components: {
     TheContainer,
     TheHeader,
     BlogCard,
+    BlogIcon,
   },
   data() {
     return {

@@ -1,6 +1,8 @@
 <template>
   <TheContainer>
-    <TheHeader title="My Resume" filename="resume.png" />
+    <TheHeader title="My Resume" filename="resume.png">
+      <ResumeIcon :color="`#177ad4`"> </ResumeIcon>
+    </TheHeader>
     <div class="exp-edu">
       <div class="experience">
         <h3>EXPERIENCE</h3>
@@ -39,11 +41,13 @@
 <script>
 import TheContainer from "../components/TheContainer.vue";
 import TheHeader from "../components/TheHeader.vue";
+import ResumeIcon from "../components/Icons/ResumeIcon.vue";
 
 export default {
   components: {
     TheContainer,
     TheHeader,
+    ResumeIcon,
   },
   data() {
     return {

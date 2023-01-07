@@ -11,10 +11,8 @@
         <ul>
           <li>
             <router-link class="link" to="/"
-              ><img
-                src="@/assets/img/home.png"
-                alt="Home Icon"
-              />Home</router-link
+              ><HomeIcon class="icon" :color="`#ffffff`"></HomeIcon
+              >Home</router-link
             >
           </li>
           <li>
@@ -25,26 +23,20 @@
           </li>
           <li>
             <router-link class="link" to="/resume"
-              ><img
-                src="@/assets/img/resume.png"
-                alt="Resume Icon"
-              />RESUME</router-link
+              ><ResumeIcon class="icon" :color="`#ffffff`"></ResumeIcon
+              >RESUME</router-link
             >
           </li>
           <li>
             <router-link class="link" to="/blog"
-              ><img
-                src="@/assets/img/blog.png"
-                alt="Blog Icon"
-              />BLOG</router-link
+              ><BlogIcon class="icon" :color="`#ffffff`"></BlogIcon
+              >BLOG</router-link
             >
           </li>
           <li>
             <router-link class="link" to="/contact"
-              ><img
-                src="@/assets/img/contact.png"
-                alt="Contact Icon"
-              />CONTACT</router-link
+              ><ContactIcon class="icon" :color="`#ffffff`"></ContactIcon
+              >CONTACT</router-link
             >
           </li>
         </ul>
@@ -54,7 +46,12 @@
 </template>
 
 <script>
+import HomeIcon from "../components/Icons/HomeIcon.vue";
 import AboutIcon from "../components/Icons/AboutIcon.vue";
+import ResumeIcon from "../components/Icons/ResumeIcon.vue";
+import BlogIcon from "../components/Icons/BlogIcon.vue";
+import ContactIcon from "../components/Icons/ContactIcon.vue";
+
 export default {
   methods: {
     redirectHandler(routeString) {
@@ -63,6 +60,10 @@ export default {
   },
   components: {
     AboutIcon,
+    HomeIcon,
+    ResumeIcon,
+    BlogIcon,
+    ContactIcon,
   },
 };
 </script>

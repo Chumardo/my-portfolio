@@ -1,15 +1,13 @@
 <template>
   <div class="page-header">
     <h1>{{ title }}</h1>
-    <span
-      ><img :src="require(`@/assets/img/${filename}`)" alt="About Icon"
-    /></span>
+    <slot></slot>
   </div>
 </template>
 
 <script>
 export default {
-  props: ["title", "filename"],
+  props: ["title"],
 };
 </script>
 
@@ -28,13 +26,8 @@ export default {
   background-color: rgba(44, 45, 47, 255);
 }
 
-img {
-  width: 40px;
-  padding-bottom: 1%;
-}
-
 h1 {
-  color: rgb(23, 122, 212);
+  color: #177ad4;
   padding-bottom: 1%;
 }
 </style>

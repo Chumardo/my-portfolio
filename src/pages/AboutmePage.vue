@@ -1,6 +1,8 @@
 <template>
   <TheContainer>
-    <TheHeader title="About Me" filename="about.png"> </TheHeader>
+    <TheHeader title="About Me">
+      <AboutIcon :color="`#177ad4`"> </AboutIcon>
+    </TheHeader>
     <div class="info">
       <div class="about">
         <h2>Web Developer</h2>
@@ -35,10 +37,12 @@
 <script>
 import TheHeader from "../components/TheHeader.vue";
 import TheContainer from "../components/TheContainer.vue";
+import AboutIcon from "../components/Icons/AboutIcon.vue";
 export default {
   components: {
     TheHeader,
     TheContainer,
+    AboutIcon,
   },
 };
 </script>

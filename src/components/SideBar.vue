@@ -18,8 +18,8 @@
             >
           </li>
           <li>
-            <router-link class="link" to="/about"
-              ><img src="@/assets/img/about.png" alt="About Icon" />ABOUT
+            <router-link class="link" to="/about">
+              <AboutIcon class="icon" :color="`#ffffff`"> </AboutIcon>ABOUT
               ME</router-link
             >
           </li>
@@ -54,11 +54,15 @@
 </template>
 
 <script>
+import AboutIcon from "../components/Icons/AboutIcon.vue";
 export default {
   methods: {
     redirectHandler(routeString) {
       this.$router.push(routeString);
     },
+  },
+  components: {
+    AboutIcon,
   },
 };
 </script>
@@ -127,20 +131,29 @@ img {
   display: flex;
   flex-direction: row;
   text-decoration: none;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
   padding-left: 15%;
+  align-items: center;
   color: white;
-}
-
-.link img {
-  padding-right: 15px;
+  width: 100%;
 }
 
 .link:hover,
+.link:hover .icon,
 .link.router-link-active,
-.link.router-link-exact-active {
+.link.router-link-exact-active .icon {
   color: rgb(23, 122, 212) !important;
   cursor: pointer;
+  fill: #177ad4;
+}
+
+.icon {
+  height: 24px;
+  width: 24px;
+  padding-right: 15px;
+}
+
+.icon:hover {
+  fill: #177ad4;
 }
 </style>

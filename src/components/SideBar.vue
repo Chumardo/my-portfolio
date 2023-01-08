@@ -51,7 +51,7 @@
             ><GitIcon class="icon" :color="`#ffffff`"> </GitIcon
           ></a>
 
-          <a href="https://www.facebook.com/dachigiorgadzee/" target="_blank"
+          <a href="https://www.linkedin.com/in/dachi-giorgadze/" target="_blank"
             ><LinkedinIcon class="icon" :color="`#ffffff`"></LinkedinIcon
           ></a>
         </div>

@@ -43,8 +43,16 @@
       </div>
       <div class="sidebar-bottom">
         <div class="social">
+          <a href="https://www.facebook.com/dachigiorgadzee/" target="_blank"
+            ><FacebookIcon class="icon" :color="`#ffffff`"> </FacebookIcon
+          ></a>
+
           <a href="https://github.com/Chumardo" target="_blank"
             ><GitIcon class="icon" :color="`#ffffff`"> </GitIcon
+          ></a>
+
+          <a href="https://www.facebook.com/dachigiorgadzee/" target="_blank"
+            ><LinkedinIcon class="icon" :color="`#ffffff`"></LinkedinIcon
           ></a>
         </div>
       </div>
@@ -59,6 +67,8 @@ import ResumeIcon from "../components/Icons/ResumeIcon.vue";
 import BlogIcon from "../components/Icons/BlogIcon.vue";
 import ContactIcon from "../components/Icons/ContactIcon.vue";
 import GitIcon from "../components/Icons/GitIcon.vue";
+import FacebookIcon from "../components/Icons/FacebookIcon.vue";
+import LinkedinIcon from "../components/Icons/LinkedinIcon.vue";
 
 export default {
   methods: {
@@ -73,6 +83,8 @@ export default {
     BlogIcon,
     ContactIcon,
     GitIcon,
+    FacebookIcon,
+    LinkedinIcon,
   },
 };
 </script>
@@ -170,5 +182,11 @@ img {
 
 .sidebar-bottom {
   padding-top: 300px;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 </style>

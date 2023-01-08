@@ -41,6 +41,13 @@
           </li>
         </ul>
       </div>
+      <div class="sidebar-bottom">
+        <div class="social">
+          <a href="https://github.com/Chumardo" target="_blank"
+            ><GitIcon class="icon" :color="`#ffffff`"> </GitIcon
+          ></a>
+        </div>
+      </div>
     </div>
   </aside>
 </template>
@@ -51,6 +58,7 @@ import AboutIcon from "../components/Icons/AboutIcon.vue";
 import ResumeIcon from "../components/Icons/ResumeIcon.vue";
 import BlogIcon from "../components/Icons/BlogIcon.vue";
 import ContactIcon from "../components/Icons/ContactIcon.vue";
+import GitIcon from "../components/Icons/GitIcon.vue";
 
 export default {
   methods: {
@@ -64,6 +72,7 @@ export default {
     ResumeIcon,
     BlogIcon,
     ContactIcon,
+    GitIcon,
   },
 };
 </script>
@@ -156,5 +165,10 @@ img {
 
 .icon:hover {
   fill: #177ad4;
+  cursor: pointer;
+}
+
+.sidebar-bottom {
+  padding-top: 300px;
 }
 </style>

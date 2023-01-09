@@ -1,6 +1,6 @@
 <template>
   <TheContainer>
-    <TheHeader title="Contact Me">
+    <TheHeader class="header" title="Contact Me">
       <ContactIcon :color="`#177ad4`"> </ContactIcon>
     </TheHeader>
     <div class="contact">
@@ -285,5 +285,9 @@ input {
 .message-sent {
   padding-top: 5%;
   color: #00a3e1;
+}
+
+.header {
+  z-index: 1;
 }
 </style>

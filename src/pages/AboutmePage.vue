@@ -1,6 +1,6 @@
 <template>
   <TheContainer>
-    <TheHeader title="About Me">
+    <TheHeader class="header" title="About Me">
       <AboutIcon :color="`#177ad4`"> </AboutIcon>
     </TheHeader>
     <div class="info">
@@ -90,5 +90,9 @@ export default {
   color: rgb(225, 225, 225);
   font-weight: 400;
   font-size: 16px;
+}
+
+.header {
+  z-index: 1;
 }
 </style>

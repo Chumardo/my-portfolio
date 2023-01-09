@@ -1,6 +1,6 @@
 <template>
   <TheContainer>
-    <TheHeader title="Contact Me" filename="contact.png">
+    <TheHeader title="Contact Me">
       <ContactIcon :color="`#177ad4`"> </ContactIcon>
     </TheHeader>
     <div class="contact">
